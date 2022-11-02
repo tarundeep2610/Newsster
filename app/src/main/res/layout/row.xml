@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id= "@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:text="This is my Title. It can be very large as large as it want to be and no one stop it except me"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_newspaper_24"></ImageView>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="this is the description"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+        <TextView
+            android:id= "@+id/authorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Tarun"
+            android:textSize="13dp"
+            android:textStyle="italic"
+            android:textColor="@color/purple_200"
+            android:padding="5dp">
+        </TextView>
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Published At"
+            android:textSize="12sp"></TextView>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
